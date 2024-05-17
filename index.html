@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Từ Mận Hào - BC69</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    
+      <!-- Icon web -->
+  <link rel="shortcut icon" href="https://steamuserimages-a.akamaihd.net/ugc/1652216789670658475/0B9874C674A17870BE217AB35F14BC4C17A5E260/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" type="image/x-icon"/>
+    <link rel="stylesheet" href="./index.js" />
+  </head>
+
+  <body class="bg-secondary">
+    <div
+      class="container mt-5 text-white"
+      style="
+        background-image: linear-gradient(
+            to right,
+            green,
+            hsl(30deg 100% 1% / 20%)
+          ),
+          url(https://cdn.luatvietnam.vn/uploaded/Images/Original/2022/01/22/cham-tra-luong-nhan-vien_2201113537.jpg);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      "
+    >
+      <h2>Bài 1: Tính tiền lương nhân viên</h2>
+
+      <div class="mb-3 mt-5">
+        <label for="" class="form-label">Lương 1 ngày là 100.000 vnd</label>
+        <input
+          type="text"
+          class="form-control mt-3"
+          style="width: 30%"
+          name=""
+          id="soNgayLam"
+          aria-describedby="helpId"
+          placeholder="Nhập số ngày làm"
+        />
+      </div>
+      <button class="btn btn-dark mt-3 mb-3" id="btnSoTienLuong">
+        Tính tiền lương theo số ngày làm
+      </button>
+    </div>
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+    <div class="container baiTap2 mt-5 text-primary-emphasis" style="
+    background-image: linear-gradient(
+        to right,
+        hsl(30deg 100% 1% / 20%),
+        hsl(30deg 100% 1% / 20%)
+      ),
+      url(https://cdn.chanhtuoi.com/uploads/2022/10/trung-binh-cong-la-gi-2-1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  ">
+        <h1>Bài 2: Tính Giá Trị Trung Bình</h1>
+        <form id="averageForm">
+            <div class="form-group">
+                <label for="number1">Nhập số thứ nhất:</label>
+                <input type="number" step="any" id="number1" class="form-control  my-2" style="width: 20%" required placeholder="Nhập số thứ nhất">
+            </div>
+            <div class="form-group">
+                <label for="number2">Nhập số thứ hai:</label>
+                <input type="number" step="any" id="number2" class="form-control  my-2" style="width: 20%" required placeholder="Nhập số thứ hai">
+            </div>
+            <div class="form-group">
+                <label for="number3">Nhập số thứ ba:</label>
+                <input type="number" step="any" id="number3" class="form-control  my-2" style="width: 20%" required placeholder="Nhập số thứ ba">
+            </div>
+            <div class="form-group">
+                <label for="number4">Nhập số thứ tư:</label>
+                <input type="number" step="any" id="number4" class="form-control  my-2" style="width: 20%" required placeholder="Nhập số thứ tư">
+            </div>
+            <div class="form-group">
+                <label for="number5">Nhập số thứ năm:</label>
+                <input type="number" step="any" id="number5" class="form-control  my-2" style="width: 20%" required placeholder="Nhập số thứ năm">
+                <!-- thuộc tính step="any" được sử dụng trong các thẻ <input> có type="number" hoặc type="range" để cho phép người dùng nhập bất kỳ giá trị số nào, bao gồm cả số thập phân. -->
+                <!-- thuộc tính required được sử dụng trong thẻ <input> để chỉ định rằng trường nhập liệu đó là bắt buộc. Nghĩa là, người dùng phải nhập dữ liệu vào trường này thì mới có thể gửi form đi. Nếu trường nhập liệu bị bỏ trống, trình duyệt sẽ hiện thông báo lỗi và ngăn chặn việc gửi form. -->
+            </div>
+            <button type="button" id="btnTinhTrungBinh" class="btn btn-primary my-3">Tính giá trị trung bình</button>
+        </form>
+        
+    </div>
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+    <div
+    class="container baiTap3 mt-5 text-white"
+    style="
+      background-image: linear-gradient(
+          to right,
+          green,
+          hsl(30deg 100% 1% / 20%)
+        ),
+        url(https://media.tapchitaichinh.vn/images/upload/tranngocanh/2013_06_17/1USD.jpg);
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    "
+  >
+    <h2>Bài 3: Quy đổi tiền USD sang VND</h2>
+
+    <div class="mb-3 mt-5">
+      <label for="" class="form-label">Tỷ giá hiện tại là 23.500 VND/USD</label>
+      <input
+        type="text"
+        class="form-control mt-3"
+        style="width: 30%; color: darkgray;"
+        name=""
+        id="soTienUsd"
+        aria-describedby="helpId"
+        placeholder="Nhập số tiền USD của bạn"
+      />
+    </div>
+    <button class="btn btn-dark mt-3 mb-3" id="btnSoTienQuyDoi">
+      Quy đổi ra tiền VND
+    </button>
+  </div>
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+  <div class="container mt-5 baiTap4" 
+  style="
+      background-image: linear-gradient(
+          to right,
+          darkgray,
+          hsl(30deg 100% 1% / 20%)
+        ),
+        url(https://img.loigiaihay.com/picture/2022/0804/cau-1_4.PNG);
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    ">
+    <h1>Bài 4: Tính Diện Tích và Chu Vi Hình Chữ Nhật</h1>
+    <form id="rectangleForm">
+        <div class="form-group">
+            <label for="chieuDai" class="my-3">Nhập chiều dài (m):</label>
+            <input type="number" step="any" id="chieuDai" class="form-control" style="width: 30%" required placeholder="Nhập chiều dài">
+        </div>
+        <div class="form-group">
+            <label for="chieuRong" class="my-3">Nhập chiều rộng (m):</label>
+            <input type="number" step="any" id="chieuRong" class="form-control" style="width: 30%" required placeholder="Nhập chiều rộng">
+        </div>
+        <button type="button" id="btnTinhToan" class="btn btn-primary my-3">Tính Toán</button>
+    </form>
+</div>
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<div class="container mt-5 baiTap5 text-light" 
+style="
+      background-image: linear-gradient(
+          to right,
+          hsl(30deg 100% 1% / 20%),
+          hsl(30deg 100% 1% / 20%)
+        ),
+        url(https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/12/cong-thuc-tinh-tong-day-so-cach-deu-2.jpg);
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    ">
+    <h1>Bài 5: Tính Tổng 2 Ký Số</h1>
+    <form id="sumDigitsForm">
+        <div class="form-group">
+            <label for="number">Nhập số có 2 chữ số:</label>
+            <input type="number" id="soChuc" class="form-control my-3 w-25" required placeholder="Vui lòng nhập số">
+        </div>
+        <button type="button" id="btnTinhTong" class="btn btn-dark my-3">Tính Tổng 2 chữ số</button>
+    </form>
+
+</div>
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------ -->
+<div class="container mt-5 baiTap5Extra text-light" 
+style="
+      background-image: linear-gradient(
+          to right,
+          hsl(30deg 100% 1% / 20%),
+          hsl(30deg 100% 1% / 20%)
+        ),
+        url(https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/12/cong-thuc-tinh-tong-day-so-cach-deu-2.jpg);
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    ">
+    <h1>Bài 5 extra: Tính Tổng nhiều Ký Số</h1>
+    <form id="sumDigitsForm">
+        <div class="form-group">
+            <label for="number">Nhập số có nhiều chữ số:</label>
+            <input type="text" id="soNguyen" class="form-control my-3 w-25" required placeholder="Vui lòng nhập vào số tự nhiên">
+        </div>
+        <button type="button" id="btnTinhTongDaySo" class="btn btn-dark my-3">Tính Tổng Dãy số</button>
+    </form>
+
+</div>
+
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
